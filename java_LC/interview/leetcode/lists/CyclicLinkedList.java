@@ -3,9 +3,6 @@ package java_LC.interview.leetcode.lists;
  * Given a linked list, determine if it has a cycle in it.
  */
 
-import java.util.LinkedList;
-import java.util.List;
-
 public class CyclicLinkedList {
     private static ListNode generateLinkedList(boolean circular) {
         ListNode root = null;
@@ -39,7 +36,7 @@ public class CyclicLinkedList {
     }
     public static void main(String[] args) {
         ListNode root = generateLinkedList(true);
-        //printLinkedList(root);
+        printLinkedList(root);
         boolean isCircular= false;
         ListNode fp,sp;
         sp=root;
